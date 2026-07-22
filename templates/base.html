@@ -18,11 +18,12 @@
             <div class="nav-right">
                 {% if user.is_authenticated %}
                     <a href="{% url 'accounts:customer_panel' %}">👤 {{ user.username }}</a>
+                    <a href="{% url 'cart' %}">🛒 Cart</a>
                     <a href="{% url 'accounts:logout' %}">Logout</a>
                 {% else %}
                     <a href="{% url 'accounts:login' %}">Login</a>
                     <a href="{% url 'accounts:signup' %}">Sign Up</a>
-                   
+                    <a href="{% url 'create_store' %}">Create Store</a>
                 {% endif %}
             </div>
         </div>
