@@ -6,7 +6,7 @@ DEBUG = config('DEBUG', cast=bool, default=True)
 
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost'] # type: ignore
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost'] 
 
 
 
